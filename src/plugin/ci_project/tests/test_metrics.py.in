@@ -1,0 +1,7 @@
+from metrics import summarize
+
+def test_total():
+    assert summarize(__VALUES__)["total"] == __TOTAL__
+
+def test_count():
+    assert summarize(__VALUES__)["count"] == len(__VALUES__)
